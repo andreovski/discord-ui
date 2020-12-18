@@ -9,20 +9,25 @@ export interface Props {
   mentions?: number;
 }
 
-const ServerButton: React.FC<Props> = ({ 
-  selected, 
-  isHome, 
-  hasNotification, 
-  mentions 
+const ServerButton: React.FC<Props> = ({
+  selected,
+  isHome,
+  hasNotification,
+  mentions,
 }) => {
   return (
-    <Button 
+    <Button
       isHome={isHome}
       hasNotification={hasNotification}
       mentions={mentions}
-      className={selected ? 'active' : '' }
+      className={selected ? 'active' : ''}
     >
-      {isHome && <img src="https://svgshare.com/i/Pb9.svg" alt="Rocketseat" />}
+      {isHome && (
+        <img
+          src="https://cdn.iconscout.com/icon/free/png-512/discord-3-569463.png"
+          alt="Rocketseat"
+        />
+      )}
     </Button>
   );
 };

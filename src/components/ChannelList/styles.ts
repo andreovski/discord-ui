@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Add } from "styled-icons/material";
+import styled from 'styled-components';
+import { Add } from 'styled-icons/material';
 
 export const Container = styled.div`
   grid-area: CL;
@@ -9,8 +9,6 @@ export const Container = styled.div`
 
   padding: 24px 9.5px 0 16px;
   background: var(--secondary);
-
-
 `;
 
 export const Category = styled.div`
@@ -25,7 +23,6 @@ export const Category = styled.div`
     font-size: 12px;
     font-weight: 500;
     color: var(--gray);
-
   }
 `;
 

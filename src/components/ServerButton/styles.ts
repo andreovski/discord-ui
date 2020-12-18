@@ -14,15 +14,14 @@ export const Button = styled.button<Props>`
 
   margin-bottom: 8px;
 
-  background-color: ${(props) => 
-    props.isHome ? 'var(--rocketseat)' : 'var(--primary)'};
+  background-color: var(--primary);
 
   position: relative;
   cursor: pointer;
 
   > img {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
   }
 
   &::before {
@@ -37,7 +36,7 @@ export const Button = styled.button<Props>`
     border-radius: 50%;
 
     content: '';
-    display: ${props => props.hasNotification ? 'inline' : 'none' };
+    display: ${(props) => (props.hasNotification ? 'inline' : 'none')};
   }
 
   &::after {
@@ -59,17 +58,16 @@ export const Button = styled.button<Props>`
     font-weight: bold;
     color: var(--white);
 
-    content: '${props => props.mentions }';
-    display: ${props => props.mentions ? 'inline' : 'none'};
-
-
+    content: '${(props) => props.mentions}';
+    display: ${(props) => (props.mentions ? 'inline' : 'none')};
   }
 
-  transition: border-radius .2s, background-color .2s;
+  transition: border-radius 0.2s, background-color 0.2s;
 
   &.active,
   &:hover {
     border-radius: 16px;
-    background-color: ${props => props.isHome ? 'var(--rocketseat)' : 'var(--discord)'}
+    background-color: ${(props) =>
+      props.isHome ? 'var(--white)' : 'var(--discord)'};
   }
 `;
