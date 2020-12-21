@@ -6,18 +6,18 @@ import { Container, Messages, InputWrapper, Input, InputIcon } from './styles';
 
 const ChannelData: React.FC = () => {
   return (
-      <Container>
-        <Messages>
-          {Array.from(Array(13).keys()).map((n) => (
-            <ChannelMessage
-              key={n}
-              author="Andreovski"
-              date="21/11/2021"
-              content="Eai meu caros, como está o clima hoje?"
-            />
+    <Container>
+      <Messages>
+        {Array.from(Array(13).keys()).map((n) => (
+          <ChannelMessage
+            key={n}
+            author="Andreovski"
+            date="21/11/2021"
+            content="Eai meu caros, como está o clima hoje?"
+          />
         ))}
 
-        <ChannelMessage 
+        <ChannelMessage
           author="chipchrome"
           date="21/11/2021"
           content="Muita neve, ta difícil a vida"
@@ -27,10 +27,7 @@ const ChannelData: React.FC = () => {
       </Messages>
 
       <InputWrapper>
-        <Input 
-          type="text" 
-          placeholder="Começe uma conversa em #chat-livre" 
-        />
+        <Input type="text" placeholder="Começe uma conversa em #chat-livre" />
 
         <InputIcon />
       </InputWrapper>

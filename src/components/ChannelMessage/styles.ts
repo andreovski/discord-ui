@@ -7,7 +7,6 @@ export const Container = styled.div`
   padding: 4px 16px;
   margin-right: 4px;
 
-
   background-color: transparent;
 
   &.mention {
@@ -42,7 +41,6 @@ export const Message = styled.div`
   justify-content: space-between;
 
   margin-left: 16px;
-
 `;
 
 export const Header = styled.div`
@@ -72,7 +70,7 @@ export const Header = styled.div`
     margin-left: 6px;
     color: var(--gray);
 
-    font-size: 13px
+    font-size: 13px;
   }
 `;
 

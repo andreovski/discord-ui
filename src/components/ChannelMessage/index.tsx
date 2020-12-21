@@ -8,8 +8,8 @@ export interface Props {
   author: string;
   date: string;
   content: string | React.ReactElement | React.ReactNode;
-  hasMention?: boolean
-  isBot?: boolean
+  hasMention?: boolean;
+  isBot?: boolean;
 }
 
 const ChannelMessage: React.FC<Props> = ({
@@ -17,10 +17,10 @@ const ChannelMessage: React.FC<Props> = ({
   date,
   content,
   hasMention,
-  isBot
+  isBot,
 }) => {
   return (
-    <Container className={hasMention ? 'mention' : '' }>
+    <Container className={hasMention ? 'mention' : ''}>
       <Avatar className={isBot ? 'bot' : ''} />
 
       <Message>
@@ -31,9 +31,7 @@ const ChannelMessage: React.FC<Props> = ({
 
           <time>{date}</time>
         </Header>
-        <Content>
-          {content}
-        </Content>
+        <Content>{content}</Content>
       </Message>
     </Container>
   );
